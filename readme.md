@@ -1,4 +1,4 @@
-## En la carpeta prisma agrega un archivo .env para que se pueda conectar a tu base de datos
+## En la carpeta prisma agrega un archivo .env para que se pueda conectar a tu base de datos con prisma
 
 ### Tu archivo .env debe tener un DATABASE_URL:
 
@@ -13,3 +13,12 @@ yarn o npm install
 ```
 
 ### Dependiendo de cual sea el que uses
+
+## Configuracion de prisma
+
+## Comandos para iniciar prisma:
+
+```
+npx prisma introspect
+npx prisma generate
+```
