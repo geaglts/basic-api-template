@@ -16,7 +16,7 @@ yarn o npm install
 
 ## Configuracion de prisma
 
-## Comandos para iniciar prisma:
+### Comandos para iniciar prisma:
 
 ```
 npx prisma introspect
