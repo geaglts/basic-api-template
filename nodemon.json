@@ -1,0 +1,6 @@
+{
+    "verbose": false,
+    "watch": ["./src", "./prisma"],
+    "ext": "js,graphql,json,prisma",
+    "exec": "babel-node src/index.js"
+}
