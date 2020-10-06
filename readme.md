@@ -6,6 +6,14 @@
 DATABASE_URL="postgresql://usuario:contraseña@host:puerto/nombre_db?schema=public"
 ```
 
+### Elimina esto del gitignore:
+
+```
+# Locks
+package-lock.json
+yarn.lock
+```
+
 ## Antes de correr algún script del package.json recuerda correr
 
 ```
