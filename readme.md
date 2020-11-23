@@ -30,3 +30,14 @@ yarn o npm install
 npx prisma introspect
 npx prisma generate
 ```
+
+# Actualización de dependencias
+### Instala npm-check-updates:
+```
+npm install -g npm-check-updates
+```
+### Ejecuta el siguiente comando:
+```
+ncu -u
+```
+
