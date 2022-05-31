@@ -1,7 +1,8 @@
 import express from "express";
-import graphqlServer from "./graphql";
 import cors from "cors";
 import helmet from "helmet";
+
+import router from "./routes";
 
 const app = express();
 
@@ -12,10 +13,10 @@ app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-graphqlServer.applyMiddleware({ app, path: "/graphql" });
+router(app);
 
 app.use("*", (req, res) => {
     res.status(404).json({ error: "Not found" });
 });
 
-export default { app, server: graphqlServer };
+export default app;

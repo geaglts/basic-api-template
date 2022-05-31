@@ -6,18 +6,10 @@
 DATABASE_URL="postgresql://usuario:contraseña@host:puerto/nombre_db?schema=public"
 ```
 
-### Elimina esto del gitignore:
-
-```
-# Locks
-package-lock.json
-yarn.lock
-```
-
 ## Antes de correr algún script del package.json recuerda correr
 
 ```
-yarn o npm install
+yarn | npm i | pnpm i
 ```
 
 ### Dependiendo de cual sea el que uses
@@ -27,17 +19,9 @@ yarn o npm install
 ### Comandos para iniciar prisma:
 
 ```
-npx prisma introspect
 npx prisma generate
 ```
 
 # Actualización de dependencias
-### Instala npm-check-updates:
-```
-npm install -g npm-check-updates
-```
-### Ejecuta el siguiente comando:
-```
-ncu -u
-```
 
+...En Proceso

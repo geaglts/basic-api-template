@@ -1,9 +1,5 @@
-import App from "./express";
+import app from "./express";
 
-App.app.listen(App.app.get("port"), () => {
-    console.log(
-        `El servidor esta activo en http://localhost:${App.app.get("port")}${
-            App.server.graphqlPath
-        }`
-    );
+app.listen(app.get("port"), () => {
+    console.log(`API listening on port ${app.get("port")}`);
 });

@@ -6,3 +6,14 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Tasks {
+  id          Int       @id @default(autoincrement())
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime? @updatedAt
+  description String
+  hourStart   String
+  hourEnd     String
+  completed   Boolean   @default(false)
+  deleted     Boolean   @default(false)
+}
