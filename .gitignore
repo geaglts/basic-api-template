@@ -128,3 +128,4 @@ config/
 itiapp.sql
 
 migrations
+pnpm-lock.yaml
